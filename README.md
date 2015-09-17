@@ -39,19 +39,21 @@ include parts/_document_head
 ```
 
 # 사용법
-1. jade 파일을 생성하고 파일 맨위에 베이스 템플릿을 extneds 한다.
+1. npm install   <--- npm에서 필요한 플러그인들을 다운로드 후 실행한다.
+2. 실행창에 gulp 라고 입력한다.  <--- gulpfile.js에 설정한 watch가 실행된다.
+3. jade 파일을 생성하고 파일 맨위에 베이스 템플릿을 extneds 한다.
 `extends part/_page_template`
 
-2. block을 지정하면 기본 템플릿을 덮어씌우는 효과가 있어 기본 기능에 코드 추가를 원할때는 
+4. block을 지정하면 기본 템플릿을 덮어씌우는 효과가 있어 기본 기능에 코드 추가를 원할때는 
    block link_head
      include parts/head/_link_head
      // 여기에 추가 소스를 입력한다.
 
-3. 기본적으로 아무런 변경을 원하지 않을 경우 기본 템플릿만 extneds 하고 
+5. 기본적으로 아무런 변경을 원하지 않을 경우 기본 템플릿만 extneds 하고 
    block main
      // 이부분에 메인 내용을 작성하면 된다.
 
-4. 다른 페이지도 동일하게 jade파일 생성 후 기본 템플릿을 extends 하고 block main 이후 새로운
+6. 다른 페이지도 동일하게 jade파일 생성 후 기본 템플릿을 extends 하고 block main 이후 새로운
    내용을 입력하면 된다.
 
 ### 공통으로 사용되는 부분을 모듈화 하면 무엇이 좋을까?
