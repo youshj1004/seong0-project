@@ -5,7 +5,7 @@
 
 
 ## base Template 구성
-`
+```js
 //- 환경 설정
 block settings
   include config/_settings
@@ -36,7 +36,7 @@ include parts/_document_head
     // Javascript
     block scripts
       include parts/scripts/_scripts_footer
-`
+```
 
 # 사용법
 1. jade 파일을 생성하고 파일 맨위에 베이스 템플릿을 extneds 한다.
