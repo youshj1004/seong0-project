@@ -1,0 +1,30 @@
+//- 환경 설정
+block settings
+  include config/_settings
+//- 문서 헤드 영역
+include parts/_document_head
+  head
+    block meta_seo
+      include parts/head/_meta_seo
+
+    block meta_viewport
+      meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    title= page_title
+    
+    block link_head
+      include parts/head/_link_head
+    
+  body
+    // Header
+    block header
+      include parts/body/_header
+
+    block main
+      h1 test~~~
+    // Footer
+    block footer
+      include parts/body/_footer
+    // Javascript
+    block scripts
+      include parts/scripts/_scripts_footer

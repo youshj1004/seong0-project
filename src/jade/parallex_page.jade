@@ -1,0 +1,119 @@
+extends part/_page_template
+
+append settings
+
+  - var page_title       = '★ parallex page ★'
+  - var isMain           = true
+  - var current_page     = 'parallex_page.html'
+  - var using_jquery     = true
+  - var using_angular    = false
+  - var meta_description = 'Good Days Main Page - Have a Good Time :-)'
+  - var meta_keywords    = 'Front-End, Web, Design, Development'
+
+  - var body_classlist   = ['index']
+  - var greeting         = 'Good Days! ^▽^'
+  - var server_module    = 'BrowserSync'
+
+block link_head
+  include part/parts/head/_link_head
+  link(rel='stylesheet', href='assets/css/parallex.css')
+
+block main
+  .show-scroll-info
+    span
+  #parallax_wrapper
+      header#branding
+      nav#primary
+        ul
+          li
+            h1 세잎클로버
+            a.manned-flight(href='#manned-flight') View
+          li
+            h1 꿈
+            a.frameless-parachute(href='#frameless-parachute') View
+          li
+            h1 목표
+            a.english-channel(href='#english-channel') View
+          li
+            h1 About
+            a.about(href='#about') View
+      #content
+        article#manned-flight
+          header
+            h1 
+              | 세잎클로버의 &nbsp;
+              | 꽃말을 <br>
+              | 아시나요?
+          p
+            | 대부분의 사람들은 네잎클로버의 꽃말은 알고 있지만 세잎클로버의 꽃말을 알지 못합니다. 그저 흔한 어디서나 볼 수 있는 흔한 풀이라고 생각합니다. 
+            | 여러분은 세잎클로버의 꽃말을 아시나요? 세잎클로버의 꽃말은 행복입니다. 주변에서 쉽게 볼 수 있지만 그냥 지나치는... 행복입니다. 
+          nav.next-prev
+            hr
+            a.next_parallex.frameless-parachute(href='#frameless-parachute') Next
+        article#frameless-parachute
+          header
+            h1 
+              | 여러분도 <br>
+              | 네잎클로버만 <br>
+              | 원하시나요?
+          p
+            | 네잎클로버의 꽃말은 행운입니다. 세상을 살아가는데 있어서 행운이 온다면 그 얼마나 좋을까요? 하지만 지나친 행운은 독사과처럼 여러분의 삶을 황폐하게 만들 수 있다는 점을 항상 가슴속에 새겨둬야 합니다.
+          nav.next-prev
+            a.prev_parallex.manned-flight(href='#manned-flight') Prev
+            hr
+            a.next_parallex.english-channel(href='#english-channel') Next
+        article#english-channel
+          header
+            h1 
+              | 저는 행복을 주는<br>
+              | 세잎클로버 같은<br>
+              | 사람이<br>
+              | 되고싶습니다.
+
+          p
+            | 행복은 우리 가까이 평범한 일상 속에 있는 것입니다.
+            | 그래서 행운의 바라는 네잎클로버를 찾기 위해
+            | 행복을 짓밟는 우둔한 행동을 하지 않는 인간이고 싶습니다.
+            | 소소한 것에 감사하고 행복을 느낄줄 아는...
+          nav.next-prev
+            a.prev_parallex.frameless-parachute(href='#frameless-parachute') Prev
+            hr
+            a.next_parallex.about(href='#about') Next
+        article#about
+          header
+            h1 About
+          p
+            | This is a jQuery parallax scrolling experiment by Jonathan Nicol. 
+            a(href='http://f6design.com/journal/2011/08/06/build-a-parallel-scrolling-website-interface-with-jquery-and-css/') Read about it
+            |  on my blog.
+          nav.next-prev
+            a.prev_parallex.english-channel(href='#english-channel') Prev
+            hr
+      // Parallax foreground
+      #parallax-bg3
+        img#bg3-1(src='images/parallex/clover.png', width='529', height='757', alt='Montgolfier hot air balloon')
+        img#bg3-2(src='images/parallex/clover.png', width='603', height='583', alt='Frameless parachute')
+        img#bg3-4(src='images/parallex/4clover_PNG8.png' alt='Landscape with trees and cows')
+      // Parallax  midground clouds
+      #parallax-bg2
+        img#bg2-1(src='images/parallex/cloud-lg1.png', alt='cloud')
+        img#bg2-2(src='images/parallex/cloud-lg2.png', alt='cloud')
+        img#bg2-3(src='images/parallex/rainbow.png', alt='rainbow')
+        img#bg2-4(src='images/parallex/cloud-lg1.png', alt='cloud')
+        img#bg2-5(src='images/parallex/cloud-lg2.png', alt='cloud')
+      // Parallax  background clouds
+      #parallax-bg1
+        img#bg1-1(src='images/parallex/cloud-lg1.png', alt='cloud')
+        img#bg1-2(src='images/parallex/rainbow.png', alt='cloud')
+        img#bg1-3(src='images/parallex/cloud-lg2.png', alt='cloud')
+        img#bg1-4(src='images/parallex/rainbow.png', alt='rainbow')
+        img#bg1-5(src='images/parallex/rainbow.png', alt='rainbow')
+      #parallex_ment
+        h1 당신은 어떤 사람인가요?
+
+block footer
+
+block scripts
+  include part/parts/scripts/_scripts_footer
+  script(type='text/javascript', src='js/parallex.js')
+  //- script(type='text/javascript', src='js/scrollTop.js')

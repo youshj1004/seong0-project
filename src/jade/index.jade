@@ -1,0 +1,109 @@
+extends part/_page_template
+
+append settings
+
+  - var page_title       = '★ youshj1004 main page ★'
+  - var isMain           = true
+  - var current_page     = 'main.html'
+  - var using_jquery     = true
+  - var using_angular    = false
+  - var meta_description = 'Good Days Main Page - Have a Good Time :-)'
+  - var meta_keywords    = 'Front-End, Web, Design, Development'
+
+  - var body_classlist   = ['index']
+  - var greeting         = 'Good Days! ^▽^'
+  - var server_module    = 'BrowserSync'
+
+
+
+block main
+    h1
+      | 홈페이지는 jade Template 기반으로 모듈을 구성하였고 <br>
+      | 다양한 jQuery 플러그인과 커스텀한 js를 이용하여 움직임을 구현했습니다.
+    section#topics.topics-section
+      .inner
+        h2 Topics
+        ul.topics-list.clearfix
+          li
+            a(href='#')
+              span.image-wrapper
+                img.image(src='images/topic-1.jpg', alt='', height='230', width='304')
+                .info_date
+                  b.title Example 01
+                  time.date(datetime='2015-09-05') 2015-09-05
+              p.description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dignissimos quod cupiditate dicta obcaecati quae odit recusandae illo. Earum, voluptas.
+          li
+            a(href='#')
+              span.image-wrapper
+                img.image(src='images/topic-2.jpg', alt='', height='230', width='304')
+                .info_date
+                  b.title Example 02
+                  time.date(datetime='2015-08-05') 2015-08-05
+              p.description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dignissimos quod cupiditate dicta obcaecati quae odit recusandae illo. Earum, voluptas.
+          li
+            a(href='#')
+              span.image-wrapper
+                img.image(src='images/topic-3.jpg', alt='', height='230', width='304')
+                .info_date
+                  b.title Example 03
+                  time.date(datetime='2015-07-05') 2015-07-05
+              p.description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dignissimos quod cupiditate dicta obcaecati quae odit recusandae illo. Earum, voluptas.
+    // /.section-topics
+    section#work.work-section
+      header.section-header
+        .inner.clearfix
+          h2 Pick up Idea
+          ul.tabs-nav
+            li
+              a(href='#work01') Idea 01
+            li
+              a(href='#work02') Idea 02
+            li
+              a(href='#work03') Idea 03
+            li
+              a(href='#work04') Idea 04
+            li
+              a(href='#work05') Idea 05
+          span.tabs-highlight
+      .section-body
+        section#work01.tabs-panel
+          .image-wrapper
+            img(src='images/work-1.jpg', alt='', width='1600', height='400')
+          .content
+            .inner
+              h3.title Idea 01
+              p.description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto minima veritatis eligendi, nemo fugiat similique! Ab voluptatem necessitatibus sit facilis.
+              a.read-more(href='./') Read more
+        section#work02.tabs-panel
+          .image-wrapper
+            img(src='images/work-2.jpg', alt='', width='1600', height='400')
+          .content
+            .inner
+              h3.title Idea 02
+              p.description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quo ut ipsam deserunt at ipsa ea commodi magnam. Dolores, quas!
+              a.read-more(href='./') Read more
+        section#work03.tabs-panel
+          .image-wrapper
+            img(src='images/work-3.jpg', alt='', width='1600', height='400')
+          .content
+            .inner
+              h3.title Idea 03
+              p.description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident modi commodi, veritatis esse nesciunt perspiciatis corrupti sapiente soluta iusto, debitis officia placeat id minus pariatur magnam maiores suscipit laboriosam ipsam.
+              a.read-more(href='./') Read more
+        section#work04.tabs-panel
+          .image-wrapper
+            img(src='images/work-4.jpg', alt='', width='1600', height='400')
+          .content
+            .inner
+              h3.title Idea 04
+              p.description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, voluptatem!
+              a.read-more(href='./') Read more
+        section#work05.tabs-panel
+          .image-wrapper
+            img(src='images/work-5.jpg', alt='', width='1600', height='400')
+          .content
+            .inner
+              h3.title Idea 05
+              p.description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error assumenda est libero alias molestias! Culpa id voluptatibus accusantium accusamus eum praesentium reiciendis asperiores in, odio beatae? Nulla officiis in optio nihil nam voluptate, repellat commodi, fuga aspernatur quidem inventore quia.
+              a.read-more(href='./') Read more
+

@@ -1,0 +1,45 @@
+extends part/_page_template
+
+append settings
+
+  - var page_title       = '★ portfolio ★'
+  - var isMain           = true
+  - var current_page     = 'profile.html'
+  - var using_jquery     = true
+  - var using_angular    = false
+  - var meta_description = 'Good Days Main Page - Have a Good Time :-)'
+  - var meta_keywords    = 'Front-End, Web, Design, Development'
+
+  - var body_classlist   = ['index']
+  - var greeting         = 'Good Days! ^▽^'
+  - var server_module    = 'BrowserSync'
+block link_head
+  include part/parts/head/_link_head
+  link(rel='stylesheet', href='assets/css/profile.css')
+
+
+block main
+
+  // 개인프로필
+  .profile_wrapper
+    h1 Dreams, passion, and I
+    .box.box1.clearfix
+      img(src='images/profile.jpg')
+    .box.box2 
+      h1 My info
+      p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eos possimus sequi praesentium laborum quibusdam nulla rerum unde rem in blanditiis, aliquid nihil dolorem numquam cupiditate quas provident, id dolores corporis nesciunt assumenda impedit laboriosam! Velit, asperiores aperiam quisquam optio quam laudantium voluptatem fugit dolores totam odit, eveniet sit, consectetur quod maiores distinctio quibusdam! Itaque eum dolorum rem voluptatum nobis, aspernatur soluta dolor aliquam ad quas nisi animi suscipit eius, quos modi aliquid perspiciatis iure perferendis voluptas laborum est voluptates. Repellendus eum autem doloremque blanditiis eveniet distinctio exercitationem reiciendis magni voluptas nobis eligendi facilis, dignissimos non labore quidem ad a harum, excepturi vero dolorem iusto totam. Rem deleniti porro ex quas mollitia quisquam, soluta expedita nulla accusantium illum. Iste placeat suscipit, adipisci architecto dolores quis eius quo, voluptatum dolor, beatae sed recusandae expedita consequatur. Deserunt aliquam aperiam, veniam repellendus explicabo voluptates quae, eius rerum consectetur quas pariatur rem deleniti aspernatur delectus recusandae qui molestias excepturi aliquid dicta voluptate corporis
+    .box.box3.clearfix
+      h1 Skill Tree
+      .inner.box.box5 
+        img(src='images/skill1.jpg')
+      .inner.box.box6 
+        img(src='images/skill2.jpg')
+      .inner.box.box7 
+        img(src='images/skill3.jpg')
+    .box.box4
+      h1 My Front-End Skills
+      #chartContainer(style='height: 300px; width: 100%;')
+block scripts
+  include part/parts/scripts/_scripts_footer
+  script(type='text/javascript', src='assets/js/jquery.canvasjs.min.js')
+  script(type='text/javascript', src='js/customCanvas.js')

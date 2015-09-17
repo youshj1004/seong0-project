@@ -1,0 +1,321 @@
+html { 
+  overflow-y: scroll; /* always force a scrollbar in non-IE */
+  }
+body {
+  background:url(../../../dist/images/parallex/sky_bg.png);
+  background: #F6FFCC;
+  overflow-x: hidden;
+  height: 4550px;
+  color: #000;
+  font-size: 14px;
+  font-family: Arial,sans-serif;
+}
+h1 {
+  color: #99E000;
+  font-size: 16px;
+}
+a, a:link,
+a:active,
+a:visited {
+  -webkit-transition: color 0.25s ease-out;
+  -moz-transition: color 0.25s ease-out;
+  -o-transition: color 0.25s ease-out;
+  transition: color 0.25s ease-out;
+  outline: none;
+  text-decoration:none;
+  }
+  a:hover { 
+    color:#000;
+    }
+img { 
+  display:block;
+  }
+p {
+  margin:1em 0;
+  }
+
+/* Common shared styles
+*****************************************************************/
+
+hr {
+  margin: 0;
+  border: none;
+  border-top: 1px solid #3b3b3b;
+  border-bottom: 1px solid #3b3b3b;
+  height: 3px;
+}
+
+/* Page structure
+*****************************************************************/
+
+#parallax_wrapper {
+  position: relative;
+  background: url(../../images/parallex/sky_bg.png);
+}
+#branding {
+  width: 100%;
+  background: #fff;
+  }
+  #branding h1 {
+    width: 940px;
+    padding: 10px 15px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    }
+
+/* Nav
+*****************************************************************/
+
+nav#primary {
+  z-index: 5;
+  position: fixed;
+  top: 50%;
+  right: 16px;
+  margin-top: -40px;
+}
+nav#primary li {
+  position: relative;
+  height: 20px;
+}
+nav#primary a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-indent: -9999px;
+  background: transparent url('../../images/parallex/nav-dot.png') 4px 4px no-repeat;
+}
+nav#primary a:hover, nav#primary a.active {
+  background: transparent url('../../images/parallex/nav-dot.png') 4px -16px no-repeat;
+}
+nav#primary h1 {
+  position: absolute;
+  right: 22px;
+  top: -7px;
+  display: none;
+  padding: 4px 20px 4px 7px;;
+  color: #fff;
+  white-space: nowrap;
+  background: transparent url('../../images/parallex/nav-arrow.png') 100% 50% no-repeat;
+  }
+nav.next-prev {
+  margin: 20px 0 0 0;
+  }
+  a.prev_parallex,
+  a.next_parallex {
+    display: block;
+    width: 15px;
+    height: 11px;
+    text-indent: -9999px;
+    }
+  a.prev_parallex {
+    margin: 0 auto 5px auto;
+    background: transparent url('../../images/parallex/arrow_up_2.png') 0 0 no-repeat;
+    padding:20px;
+    }
+  a.next_parallex {
+    margin: 5px auto 0 auto;
+    background: transparent url('../../images/parallex/arrow_down.png') -1px 0 no-repeat;
+    padding:20px;
+    }
+
+/* Parallax
+*****************************************************************/
+
+/* content */
+#content {
+  z-index: 4;
+  position: relative;
+  max-width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+  line-height: 1.7;
+  }
+  #content article {
+    width: 300px;
+    }
+    #manned-flight ,
+    #frameless-parachute,
+    #english-channel,
+    #about {
+      padding-top: 105px;
+      }
+    #manned-flight {
+      position: absolute;
+      top: 0px;
+      }
+    #frameless-parachute {
+      position: absolute;
+      top: 1090px;
+      }
+    #english-channel {
+      position: absolute;
+      top: 2180px;
+      }
+      #content h1 {
+        margin: 0 0 25px 0;
+        font-size: 40px;
+        font-family: Georgia, serif;
+        font-weight: normal;
+        line-height: 65px;
+        }
+    #about {
+      position: absolute;
+      top: 3270px;
+      }
+/* foreground (ballons/landscape) */
+#parallax-bg3 {
+  z-index: 3;
+  position: fixed;
+  left: 50%; /* align left edge with center of viewport */
+  top: 0;
+  width: 940px;
+  margin-left: -470px; /* move left by half element's width */
+  }
+  /* balloon */
+  #parallex_ment{
+    position: absolute;
+    top: 3442px;
+    left: 564px;
+    opacity: 0.4;
+  }
+  #parallex_ment h1{
+    font-size: 50px;
+  }
+
+  #bg3-1 {
+    position: absolute;
+    top: 4200px;
+    left: 355px;
+    }
+  #bg3-2 {
+    position: absolute;
+    top: 812px;
+    left: 321px;
+    }
+  #bg3-3 {
+    position: absolute;
+    top: 1628px;
+    left: 403px;
+    }
+  #bg3-4 {
+    position: absolute;
+    top: 2700px;
+    left: 270px;
+    }
+/* midground (clouds) */
+#parallax-bg2 {
+  z-index: 2;
+  position: fixed;
+  left: 50%; /* align left edge with center of viewport */
+  top: 0;
+  width: 1200px;
+  margin-left: -600px; /* move left by half element's width */
+  }
+  #bg2-1 {
+    position: absolute;
+    top: 700px;
+    left: 200px;
+    }
+  #bg2-2 {
+    position: absolute;
+    top: 650px;
+    right: -100px;
+    }
+  #bg2-3 {
+    position: absolute;
+    top: 543px;
+    left: -35px;
+    }
+  #bg2-4 {
+    position: absolute;
+    top: 1180px;
+    left: 250px;
+    }
+  #bg2-5 {
+    position: absolute;
+    top: 900px;
+    left: 890px;
+    }
+/* background (clouds) */
+#parallax-bg1 {
+  z-index: 1;
+  position: fixed;
+  left: 50%; /* align left edge with center of viewport */
+  top: 0;
+  width: 1200px;
+  margin-left: -600px; /* move left by half element's width */
+  }
+  #bg1-1 {
+    position: absolute;
+    top: 540px;
+    left: -130px;
+    }
+  #bg1-2 {
+    position: absolute;
+    top: 660px;
+    left: 1150px;
+    }
+  #bg1-3 {
+    position: absolute;
+    top: 900px;
+    left: -220px;
+    }
+  #bg1-4 {
+    position: absolute;
+    top: 1200px;
+    left: 450px;
+    }
+  #bg1-5 {
+    position: absolute;
+    top: 2140px;
+    right: 200px;
+    width: 350px;
+    height: 350px;
+    opacity: 0;
+  }
+
+
+
+/* scroll top css */
+
+.show-scroll-info {
+  position:    fixed;
+  right:       30px;
+  top:         150px;
+  font-size:   32px;
+  font-weight: 600;
+  text-align:  right;
+  animation: dungdung 0.6s linear infinite alternate;
+}
+
+.show-scroll-info::before {
+  content: '어디쯤이게?';
+  position: absolute;
+  top: -12px;
+  right: 10px;
+  width: 100px;
+  font-size: 12px;
+}
+
+#scrolled-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: #FC414B;
+}
+
+@keyframes dungdung {
+  0% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}

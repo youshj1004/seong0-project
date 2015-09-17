@@ -1,0 +1,59 @@
+/* section02 */
+.mSection02 .arrow {
+  position:absolute; 
+  left:270px; 
+  top:10px; 
+  width:49px; 
+  height:56px; 
+  z-index:1500;
+}
+.mSection02 .tit {
+  left:291px;
+  top:257px; 
+  z-index:1500;
+}
+.mSection02 .txt {
+  left:297px; 
+  top:464px; 
+  z-index:1450;
+}
+.mSection02 .obj01 {
+  left:780px; 
+  top:-60px; 
+  width:258px; 
+  height:254px; 
+  background:url(../../images/parallex/index/mSection02_obj01.png) no-repeat left top; 
+  z-index:1100;
+}
+.mSection02 .obj02 {
+  left:690px; 
+  top:15px; 
+  width:258px; 
+  height:254px; 
+  background:url(../../images/parallex/index/mSection02_obj02.png) no-repeat left top; 
+  z-index:1200;
+}
+.mSection02 .obj03 {
+  left:630px; 
+  top:203px; 
+  width:599px; 
+  height:475px; 
+  background:url(../../images/parallex/index/mSection02_obj03.png) no-repeat left top; 
+  z-index:1400;
+}
+.mSection02 .obj04 {
+  left:505px; 
+  top:624px; 
+  width:536px; 
+  height:390px;
+  background:url(../../images/parallex/index/mSection02_obj05.png) no-repeat left top;
+  z-index:1300;
+}
+.mSection02 .obj05 {
+  left:610px; 
+  top:777px; 
+  width:593px; 
+  height:425px; 
+  background:url(../../images/parallex/index/mSection02_obj04.png) no-repeat left top; 
+  z-index:1350;
+}
