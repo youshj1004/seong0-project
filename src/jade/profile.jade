@@ -2,7 +2,7 @@ extends part/_page_template
 
 append settings
 
-  - var page_title       = '★ portfolio ★'
+  - var page_title       = 'portfolio'
   - var isMain           = true
   - var current_page     = 'profile.html'
   - var using_jquery     = true
@@ -16,6 +16,7 @@ append settings
 block link_head
   include part/parts/head/_link_head
   link(rel='stylesheet', href='assets/css/profile.css')
+  //- link(rel='stylesheet', href='assets/css/bootstrap.min.css')
 
 
 block main
@@ -26,8 +27,40 @@ block main
     .box.box1.clearfix
       img(src='images/profile.jpg')
     .box.box2 
-      h1 My info
-      p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eos possimus sequi praesentium laborum quibusdam nulla rerum unde rem in blanditiis, aliquid nihil dolorem numquam cupiditate quas provident, id dolores corporis nesciunt assumenda impedit laboriosam! Velit, asperiores aperiam quisquam optio quam laudantium voluptatem fugit dolores totam odit, eveniet sit, consectetur quod maiores distinctio quibusdam! Itaque eum dolorum rem voluptatum nobis, aspernatur soluta dolor aliquam ad quas nisi animi suscipit eius, quos modi aliquid perspiciatis iure perferendis voluptas laborum est voluptates. Repellendus eum autem doloremque blanditiis eveniet distinctio exercitationem reiciendis magni voluptas nobis eligendi facilis, dignissimos non labore quidem ad a harum, excepturi vero dolorem iusto totam. Rem deleniti porro ex quas mollitia quisquam, soluta expedita nulla accusantium illum. Iste placeat suscipit, adipisci architecto dolores quis eius quo, voluptatum dolor, beatae sed recusandae expedita consequatur. Deserunt aliquam aperiam, veniam repellendus explicabo voluptates quae, eius rerum consectetur quas pariatur rem deleniti aspernatur delectus recusandae qui molestias excepturi aliquid dicta voluptate corporis
+        h2 Seong HwaJung
+        p.detail
+          strong Position: 
+          |  Front-End Developer
+        p.detail
+          strong 사는곳:
+          |  서울시 관악구 신림동 / 태어난 곳 : 거제도
+        p.detail
+          strong 취미  : 
+          |  헬스, 탁구, 드론
+        p.detail
+          strong 특기  :
+          |  마라톤, 축구, 단거리 100M
+        p.detail
+          strong 각오 <br><br>
+          |  IT는 어느곳보다 변화가 빠르게 일어나는 생태환경을 가지고 있습니다.<br>
+          |  남들보단 늦게 시작했지만 남들보다 뒤쳐지지 않게 Awesome 한 인재가 되도록
+          |  노력하겠습니다.
+        p.detail
+          strong Skills: 
+          span.label.label-info.tags html5 
+          &nbsp;
+          span.label.label-info.tags css3 
+          &nbsp;
+          span.label.label-info.tags javascript 
+          &nbsp;
+          span.label.label-info.tags jquery 
+          &nbsp;
+          span.label.label-info.tags jade 
+          &nbsp;
+          span.label.label-info.tags sass 
+          &nbsp;
+          span.label.label-info.tags bootstrap3 
+    // /col
     .box.box3.clearfix
       h1 Skill Tree
       .inner.box.box5 

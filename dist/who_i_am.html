@@ -11,7 +11,7 @@
     <meta name="keywords" content="Front-End, Web, Design, Development">
     <meta name="author" content="youshj1004">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>jquery_ul page</title>
+    <title>Who I am ?</title>
     <!-- CSS start-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="assets/css/font-awesome.css">
@@ -21,6 +21,8 @@
     <!--if lt IE 9script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
     -->
     <!-- Favicon and touch icons-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/demo.css">
   </head>
   <body>
     <!-- Header-->
@@ -45,9 +47,9 @@
                 </li>
                 <li><a href="parallex_page.html"><i class="icon-star"></i><br/>PARALLAX SCROLLING</a>
                 </li>
-                <li><a href="who_i_am.html"><i class="icon-heart"></i><br/>Who I am ?</a>
+                <li class="current-page"><a href="who_i_am.html"><i class="icon-heart"></i><br/>Who I am ?</a>
                 </li>
-                <li class="current-page"><a href="jquery_ui.html"><i class="icon-user-md"></i><br/>jQuery UI</a>
+                <li><a href="jquery_ui.html"><i class="icon-user-md"></i><br/>jQuery UI</a>
                 </li>
               </ul>
             </div>
@@ -55,7 +57,56 @@
         </div>
       </div>
     </div>
-    <h2>제이쿼리 ui 페이지</h2>
+    <section class="main">
+      <ul class="ch-grid">
+        <li>
+          <div class="ch-item">
+            <div class="ch-info">
+              <div class="ch-info-front ch-img-1"></div>
+              <div class="ch-info-back">
+                <h3>근면</h3>
+                <p>
+                  12년 개근상은 필수 <br>
+                  모범상은 옵션
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="ch-item">
+            <div class="ch-info">
+              <div class="ch-info-front ch-img-2"></div>
+              <div class="ch-info-back">
+                <h3>도전</h3>
+                <p>
+                  안전지대를 벗어나자! <br>
+                  새로운 기술에 흥미를 느끼며 <br>
+                  발전하는 모습에 취하다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="ch-item">
+            <div class="ch-info">
+              <div class="ch-info-front ch-img-3"></div>
+              <div class="ch-info-back">
+                <h3>T자형 인재</h3>
+                <p>
+                  한우물만 파는 시대는 <br>
+                  지나갔다<br>
+                  업무와 관련된 다양한 <br>
+                  지식을 쌓는<br>
+                  인재가 되겠습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
     <!-- Footer-->
     <button type="button" class="back-to-top"><span class="label">go to top</span></button>
     <footer class="footer-distributed clearfix">
@@ -90,5 +141,6 @@
       ] );
       })(window.jQuery);
     </script>
+    <script type="text/javascript" src="js/test.js"></script>
   </body>
 </html>

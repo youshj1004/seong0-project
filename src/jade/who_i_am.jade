@@ -1,0 +1,58 @@
+extends part/_page_template
+
+append settings
+
+  - var page_title       = 'Who I am ?'
+  - var isMain           = true
+  - var current_page     = 'who_i_am.html'
+  - var using_jquery     = true
+  - var using_angular    = false
+  - var meta_description = 'Good Days Main Page - Have a Good Time :-)'
+  - var meta_keywords    = 'Front-End, Web, Design, Development'
+
+  - var body_classlist   = ['index']
+  - var greeting         = 'Good Days! ^▽^'
+  - var server_module    = 'BrowserSync'
+
+block link_head
+  include part/parts/head/_link_head
+  link(rel='stylesheet', href='assets/css/main.css')
+  link(rel='stylesheet', href='assets/css/demo.css')
+
+block main
+  section.main
+    ul.ch-grid
+      li
+        .ch-item
+          .ch-info
+            .ch-info-front.ch-img-1
+            .ch-info-back
+              h3 근면
+              p
+                | 12년 개근상은 필수 <br>
+                | 모범상은 옵션
+      li
+        .ch-item
+          .ch-info
+            .ch-info-front.ch-img-2
+            .ch-info-back
+              h3 도전
+              p
+                | 안전지대를 벗어나자! <br>
+                | 새로운 기술에 흥미를 느끼며 <br>
+                | 발전하는 모습에 취하다.
+      li
+        .ch-item
+          .ch-info
+            .ch-info-front.ch-img-3
+            .ch-info-back
+              h3 T자형 인재
+              p
+                | 한우물만 파는 시대는 <br>
+                | 지나갔다<br>
+                | 업무와 관련된 다양한 <br>
+                | 지식을 쌓는<br>
+                | 인재가 되겠습니다.
+block scripts
+  include part/parts/scripts/_scripts_footer
+  script(type='text/javascript', src='js/test.js')

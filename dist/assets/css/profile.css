@@ -55,6 +55,43 @@ body:after {
   float: right;
   margin-right: 0;
 }
+.box2 h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.box2 strong {
+  font-weight: bold;
+  font-size: 20px;
+}
+.box2 p {
+  font-size: 16px;
+}
+.box2 .label-info {
+    background-color: #5bc0de;
+}
+
+.profile_wrapper h1 {
+  font-family: 'Signika', sans-serif;
+}
+
+.box2 .label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+p.detail {
+    margin: 0 0 15px;
+    text-align: left;
+    font-family: 'Signika', sans-serif;
+}
 
 .box3 {
   border: 1px solid #D5D5D5;
